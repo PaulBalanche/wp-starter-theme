@@ -1,0 +1,19 @@
+{
+    "id": "header-banner",
+    "name": "Header banner",
+    "description": "",
+    "props": {
+        "title": {
+            "label": "Title",
+            "type": "string"
+        },
+        "content": {
+            "label": "Content",
+            "type": "wysiwyg"
+        },
+        "link": {
+            "label": "Link",
+            "type": "link"
+        }
+    }
+}

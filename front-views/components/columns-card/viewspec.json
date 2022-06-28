@@ -1,0 +1,30 @@
+{
+    "id": "columns-card",
+    "name": "Columns card",
+    "description": "",
+    "props": {
+        "columns": {
+            "title": "Columns",
+            "type": "object",
+            "repeatable": true,
+            "props": {
+                "image": {
+                    "label": "Image",
+                    "type": "image"
+                },
+                "title": {
+                    "label": "Title",
+                    "type": "string"
+                },
+                "content": {
+                    "label": "Content",
+                    "type": "wysiwyg"
+                },
+                "link": {
+                    "label": "Link",
+                    "type": "link"
+                }
+            }
+        }
+    }
+}

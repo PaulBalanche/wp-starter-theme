@@ -1,0 +1,18 @@
+<div class="row text-center">
+
+  {% if columns and columns|length > 0 %}
+
+    {% set col_lg = ( 12 / columns|length ) | round(0, 'ceil') %}
+
+    {% for column in columns %}
+      <div class="col-lg-{{ col_lg }}">
+        {% if column.image %}<img class="img-fluid bd-placeholder-img rounded-circle" src="{{ column.image.src }}" alt="" />{% endif %}
+        <h2 class="fw-normal mt-1">{{ column.title }}</h2>
+        {{ column.content }}
+        {% if column.link %}<p><a class="btn btn-secondary" href="{{ column.link.url }}">{{ column.link.text }}</a></p>{% endif %}
+      </div>
+    {% endfor %}
+
+  {% endif %}
+
+</div><!-- /.row -->

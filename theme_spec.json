@@ -1,0 +1,63 @@
+{
+    "allowed_block_types": [
+        "core/paragraph",
+        "core/list",
+        "core/heading",
+        "core/button",
+        "custom/wpe-container",
+        "custom/wpe-component"
+    ],
+    "menu_locations": {
+        "top-left": "Top left",
+        "top-right": "Top right",
+        "bottom": "Bottom"
+    },
+    "i18n": {
+        "site-title": "Basic Wordpress boilerplate theme",
+        "copyright": "© 2022 Basic Wordpress boilerplate theme"
+    },
+    "spacing": "bootstrap",
+    "assets": {
+        "css": {
+            "global": {
+                "src": "dist/main.css",
+                "deps": "",
+                "ver": "",
+                "media": "",
+                "env": "development",
+                "in_editor": true
+            }
+        },
+        "js": {
+            "global": {
+                "src": "dist/bundle.js",
+                "deps": "",
+                "ver": "",
+                "in_footer": ""
+            }
+        }
+    },
+    "text_domain": "wpe-basic-boilerplate-theme",
+    "styles": {
+        "typo": {
+            "values": {
+                "paragraph-lead": {
+                    "name": "Paragraph lead",
+                    "class": "lead",
+                    "type": "block",
+                    "tag": "p"
+                },
+                "bold": {
+                    "name": "Bold",
+                    "class": "typo-bold",
+                    "type": "inline"
+                },
+                "italic": {
+                    "name": "Italic",
+                    "class": "typo-italic",
+                    "type": "inline"
+                }
+            }
+        }
+    }
+}

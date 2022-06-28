@@ -1,0 +1,41 @@
+{
+    "id": "text-image",
+    "name": "Text / Image",
+    "description": "",
+    "props": {
+        "side": {
+            "label": "Side",
+            "type": "radio",
+            "options": [
+                {
+                    "value": "left",
+                    "name": "Left"
+                },
+                {
+                    "value": "right",
+                    "name": "Right"
+                }
+            ]
+        },
+        "title": {
+            "label": "Title",
+            "type": "string"
+        },
+        "content": {
+            "label": "Content",
+            "type": "wysiwyg"
+        },
+        "image": {
+            "label": "Image",
+            "type": "image",
+            "image": {
+                "image_size_identifier": {
+                    "default": "large"
+                },
+                "instructions": {
+                    "default": "Recommended source: 3072x1728 (16/9)"
+                }
+            }
+        }
+    }
+}

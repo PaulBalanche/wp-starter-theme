@@ -1,0 +1,23 @@
+{
+    "name": "wpextend/wp-starter-theme",
+    "description": "Basic Wordpress boilerplate theme",
+    "version": "1.0.0",
+    "type": "wordpress-theme",
+    "keywords": ["wordpress", "theme", "wpextend"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Paul Balanche",
+            "email": "paul.balanche@gmail.com",
+            "homepage": "https://github.com/PaulBalanche/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "paul.balanche@gmail.com"
+    },
+    "require": {
+        "php": ">=7.4",
+        "timber/timber": "^1.9"
+    }
+}

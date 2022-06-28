@@ -1,0 +1,9 @@
+<div class="row featurette {{ margin }}">
+    <div class="col-md-7 {% if side and side == 'right' %} order-md-2 {% endif %}">
+        <h2 class="featurette-heading fw-normal lh-1 my-2">{{ title }}</h2>
+        {{ content }}
+    </div>
+    <div class="col-md-5 {% if side and side == 'right' %} order-md-1 {% endif %}">
+        {% if image %}<img class="img-fluid" src="{{ image.src }}" alt="" />{% endif %}
+    </div>
+</div>

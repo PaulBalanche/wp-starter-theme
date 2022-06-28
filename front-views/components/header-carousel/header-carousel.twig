@@ -1,0 +1,31 @@
+{% if slides and slides|length > 0 %}
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      {% for slide in slides %}
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="{{ loop.index - 1 }}" {% if loop.index == 1 %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ loop.index - 1 }}"></button>
+      {% endfor %}
+    </div>
+    <div class="carousel-inner">
+      {% for slide in slides %}
+        <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
+          <div class="bg-image bg-secondary" {% if slide.image %}style="background-image: url('{{ slide.image.src }}')"{% endif %}></div>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>{{ slide.title }}</h1>
+              {{ slide.content }}
+              {% if slide.link %}<p><a class="btn btn-lg btn-primary" href="{{ slide.link.url }}">{{ slide.link.text }}</a></p>{% endif %}
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+{% endif %}

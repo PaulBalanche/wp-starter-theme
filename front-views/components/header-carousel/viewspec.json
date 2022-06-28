@@ -1,0 +1,30 @@
+{
+    "id": "header-carousel",
+    "name": "Header carousel",
+    "description": "",
+    "props": {
+        "slides": {
+            "title": "Slides",
+            "type": "object",
+            "repeatable": true,
+            "props": {
+                "image": {
+                    "label": "Image",
+                    "type": "image"
+                },
+                "title": {
+                    "label": "Title",
+                    "type": "string"
+                },
+                "content": {
+                    "label": "Content",
+                    "type": "wysiwyg"
+                },
+                "link": {
+                    "label": "Link",
+                    "type": "link"
+                }
+            }
+        }
+    }
+}
